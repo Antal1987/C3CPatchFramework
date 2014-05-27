@@ -1,0 +1,3 @@
+LIBRARY	"C3CPatchFramework"
+EXPORTS
+get_pf_object	@1
