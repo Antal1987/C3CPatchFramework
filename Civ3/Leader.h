@@ -4,8 +4,8 @@
 #include "Culture.h"
 #include "Espionage.h"
 #include "Hash_Table.h"
-
-struct struct_Leader_vtable;
+//#include "Game_Data.h"
+//#include "City.h"
 
 #pragma pack(push, 1)
 struct class_Leader_Data_10
@@ -21,7 +21,7 @@ struct class_Leader_Data_10
 struct class_Leader
 {
 public:
-  struct_Leader_vtable *vtable;
+  void *vtable;
   int field_4[6];
   int ID;
   int RaceID;
@@ -106,54 +106,8 @@ public:
   class_Leader_Data_10 Data_10_Array2[32];
   class_Leader_Data_10 Data_10_Array3[32];
   class_Hash_Table Auto_Improvements;
-};
-#pragma pack(pop)
 
-#pragma pack(push, 1)
-struct struct_Leader_vtable
-{
-  int m00;
-  int m01;
-  int m02;
-  int m03;
-  int m04;
-  int m05;
-  int m06;
-  int m07;
-  int m08;
-  int m09;
-  int m10;
-  int m11;
-  int m12;
-  int m13;
-  int m14;
-  int m15;
-  int m16;
-  int m17;
-  int m18;
-  int m19;
-  int m20;
-  int m21;
-  int m22;
-  int m23;
-  int m24;
-  int m25;
-  int m26;
-  int m27;
-  void (__thiscall *m28)(class_Leader *);
-  int m29;
-  int m30;
-  int m31;
-  int m32;
-  int m33;
-  int m34;
-  int m35;
-  int m36;
-  int m37;
-  int m38;
-  int m39;
-  int m40;
-  int m41;
-  int m42;
+  //char * Get_Name(Game_Data * Data) { return Data->Get_Race(this->ID)->CountryName; }
+  //class_City * Get_Capital(Game_Data * Data) { return Data->Get_City(this->CapitalID); }
 };
 #pragma pack(pop)

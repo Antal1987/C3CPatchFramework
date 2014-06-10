@@ -1,16 +1,17 @@
 #pragma once
-#include "Common.h"
+#include "Base.h"
 
-struct class_Unit_Body;
-
+/*  273 */
 #pragma pack(push, 1)
-struct class_Unit
+struct class_IDLS
 {
-  struct_Unit_vtable *vtable;
-  int field_4;
-  char str_UNIT[4];
-  int field_C[4];
-  class_Unit_Body Body;
+  class_Base Base;
+  int field_1C;
+  int field_20;
+  int field_24;
+  int field_28;
+  int field_2C;
+  int field_30;
 };
 #pragma pack(pop)
 
@@ -51,3 +52,34 @@ struct class_Unit_Body
 };
 #pragma pack(pop)
 
+#pragma pack(push, 1)
+struct class_Unit
+{
+  class_Base Base;
+  class_Unit_Body Body;
+};
+#pragma pack(pop)
+
+enum UnitTypeAIValues
+{
+  UTAIV_Offence = 0x0,
+  UTAIV_Defence = 0x1,
+  UTAIV_Artillery = 0x2,
+  UTAIV_Explore = 0x3,
+  UTAIV_Army = 0x4,
+  UTAIV_Cruise_Missile = 0x5,
+  UTAIV_Air_Bombard = 0x6,
+  UTAIV_Air_Defence = 0x7,
+  UTAIV_Naval_Power = 0x8,
+  UTAIV_Air_Transport = 0x9,
+  UTAIV_Naval_Transport = 0xA,
+  UTAIV_Naval_Carrier = 0xB,
+  UTAIV_Terraform = 0xC,
+  UTAIV_Settle = 0xD,
+  UTAIV_Leader = 0xE,
+  UTAIV_Tactical_Nuke = 0xF,
+  UTAIV_ICBM = 0x10,
+  UTAIV_Naval_Missile_Transport = 0x11,
+  UTAIV_Flag_Unit = 0x12,
+  UTAIV_King = 0x13,
+};

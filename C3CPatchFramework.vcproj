@@ -183,6 +183,14 @@
 				>
 			</File>
 			<File
+				RelativePath=".\City_Functions.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Common_Functions.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\CPatchFramework.cpp"
 				>
 			</File>
@@ -209,7 +217,15 @@
 				</FileConfiguration>
 			</File>
 			<File
+				RelativePath=".\Game_Data.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\IPatchFramework.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Leader_Functions.cpp"
 				>
 			</File>
 			<File
@@ -232,9 +248,33 @@
 					/>
 				</FileConfiguration>
 			</File>
+			<File
+				RelativePath=".\Unit_Action_Logger.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Unit_Functions.cpp"
+				>
+			</File>
 			<Filter
 				Name="Civ3"
 				>
+			</Filter>
+			<Filter
+				Name="Tools"
+				>
+				<File
+					RelativePath=".\Tools\FileLogger.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Tools\IniReader.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Tools\IniWriter.cpp"
+					>
+				</File>
 			</Filter>
 		</Filter>
 		<Filter
@@ -247,11 +287,35 @@
 				>
 			</File>
 			<File
+				RelativePath=".\City_Functions.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Civ3_Functions.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Common_Functions.h"
+				>
+			</File>
+			<File
 				RelativePath=".\CPatchFramework.h"
 				>
 			</File>
 			<File
+				RelativePath=".\Game_Data.h"
+				>
+			</File>
+			<File
 				RelativePath=".\IPatchFramework.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Leader_Functions.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Parameters.h"
 				>
 			</File>
 			<File
@@ -260,6 +324,18 @@
 			</File>
 			<File
 				RelativePath=".\targetver.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Unit_Action_Logger.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Unit_Actions.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Unit_Functions.h"
 				>
 			</File>
 			<Filter
@@ -274,7 +350,23 @@
 					>
 				</File>
 				<File
+					RelativePath=".\Civ3\Base_List.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Civ3\BIC.h"
+					>
+				</File>
+				<File
 					RelativePath=".\Civ3\Citizen.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Civ3\Citizen_Type.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Civ3\Citizens.h"
 					>
 				</File>
 				<File
@@ -282,7 +374,31 @@
 					>
 				</File>
 				<File
+					RelativePath=".\Civ3\City_Buildings.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Civ3\City_Buildings_Info.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Civ3\City_Improvements.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Civ3\City_Population.h"
+					>
+				</File>
+				<File
 					RelativePath=".\Civ3\Civ_Treaties.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Civ3\Combat_Controller.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Civ3\Combat_Experience.h"
 					>
 				</File>
 				<File
@@ -290,11 +406,43 @@
 					>
 				</File>
 				<File
+					RelativePath=".\Civ3\Continent.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Civ3\CTPG.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Civ3\Cultural_Levels.h"
+					>
+				</File>
+				<File
 					RelativePath=".\Civ3\Culture.h"
 					>
 				</File>
 				<File
+					RelativePath=".\Civ3\Date.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Civ3\Difficulty_Level.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Civ3\Era_Type.h"
+					>
+				</File>
+				<File
 					RelativePath=".\Civ3\Espionage.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Civ3\Game.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Civ3\General.h"
 					>
 				</File>
 				<File
@@ -314,7 +462,51 @@
 					>
 				</File>
 				<File
+					RelativePath=".\Civ3\Map.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Civ3\Map_Renderer.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Civ3\Map_Worker_Job_Info.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Civ3\Race.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Civ3\Resource_Type.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Civ3\Scenario_Player.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Civ3\Starting_Location.h"
+					>
+				</File>
+				<File
 					RelativePath=".\Civ3\Tile.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Civ3\Tile_Image_Info.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Civ3\Tile_Objects.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Civ3\Tile_Type.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Civ3\Tile_Units.h"
 					>
 				</File>
 				<File
@@ -325,6 +517,34 @@
 					RelativePath=".\Civ3\UnitType.h"
 					>
 				</File>
+				<File
+					RelativePath=".\Civ3\Worker_Job.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Civ3\World_Features.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Civ3\World_Size.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Tools"
+				>
+				<File
+					RelativePath=".\Tools\FileLogger.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Tools\IniReader.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Tools\IniWriter.h"
+					>
+				</File>
 			</Filter>
 		</Filter>
 		<Filter
@@ -333,10 +553,6 @@
 			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
 			>
 		</Filter>
-		<File
-			RelativePath=".\ReadMe.txt"
-			>
-		</File>
 	</Files>
 	<Globals>
 	</Globals>

@@ -1,0 +1,71 @@
+#pragma once
+#include "Base.h"
+
+/*   13 */
+#pragma pack(push, 1)
+struct struct_UnitType
+{
+  int field_0;
+  int field_4;
+  char Name[32];
+  char Civilipedia_Entry[32];
+  int Bombard_Strength;
+  int Bombard_Range;
+  int Transport_Capacity;
+  int Cost;
+  int Defence;
+  int ID;
+  int Attack;
+  int OperationalRange;
+  int PopulationCost;
+  int FireRate;
+  int Movement;
+  int AdvReq;
+  int UpgradeToID;
+  int ResReq[3];
+  int UnitAbilities;
+  int AI_Strategy;
+  int Available_To;
+  int field_94;
+  int field_98;
+  int Unit_Class;
+  int IconID_2;
+  int Hit_Point_Bonus;
+  int Standard_Actions;
+  int Special_Actions;
+  int Worker_Actions;
+  int Air_Missions;
+  int field_B8;
+  int Bombard_Fix;
+  int field_C0;
+  int field_C4;
+  int field_C8;
+  int field_CC;
+  int b_Not_King;
+  int field_D4;
+  int field_D8;
+  int field_DC;
+  int field_E0;
+  int field_E4;
+  int field_E8;
+  int field_EC;
+  int field_F0;
+  int field_F4;
+  int field_F8;
+  int Stealth_Attack_Count;
+  int field_100;
+  int *Stealth_Attack_Units;
+  int *Stealth_Attack_Units_End;
+  int *Stealth_Attack_Units_End2;
+  int field_110;
+  int field_114;
+  int field_118;
+  int field_11C;
+  int field_120;
+  int field_124;
+  int Create_Craters;
+  float WorkerStrength;
+  int Extra_Abilities;
+  int Air_Defence;
+};
+#pragma pack(pop)

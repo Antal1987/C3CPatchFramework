@@ -1,5 +1,8 @@
 #pragma once
 
+#include "stdafx.h"
+#include "Common.h"
+
 struct class_Base_vtable;
 
 #pragma pack(push, 1)

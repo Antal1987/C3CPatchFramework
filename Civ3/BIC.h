@@ -1,0 +1,90 @@
+#pragma once
+#include "Base.h"
+
+#include "Improvement.h"
+#include "Citizen_Type.h"
+#include "Difficulty_Level.h"
+#include "Era_Type.h"
+#include "Combat_Experience.h"
+#include "Race.h"
+#include "Resource_Type.h"
+#include "Government.h"
+#include "Scenario_Player.h"
+#include "UnitType.h"
+#include "General.h"
+#include "Starting_Location.h"
+#include "Advance.h"
+#include "Worker_Job.h"
+#include "Tile_Type.h"
+#include "World_Size.h"
+#include "Combat_Controller.h"
+#include "Map.h"
+
+/*   56 */
+#pragma pack(push, 1)
+struct class_BIC
+{
+  class_Base Base;
+  int field_1C[523];
+  int field_848;
+  int field_84C;
+  int field_850[10];
+  int ImprovementsCount;
+  int CitiesCount;
+  int CitizenTypeCount;
+  int ColoniesCount;
+  int CulturalOpinionCount;
+  int DifficultyLevelCount;
+  int ErasCount;
+  int DiplomatMissionCount;
+  int CombatExperienceCount;
+  int ResourceTypeCount;
+  int GovernmentsCount;
+  int Player_Count;
+  int UnitTypeCount;
+  int RacesCount;
+  int StartingLocationsCount;
+  int AdvanceCount;
+  int WorkerJobCount;
+  int TileTypesCount;
+  int UnitsCount;
+  int WorldSizesCount;
+  int field_8C8;
+  int Header;
+  int field_8D0;
+  int field_8D4[180];
+  struct_Improvement *Improvements;
+  struct_Citizen_Type *CitizenTypes;
+  int Cities;
+  int Colonies;
+  int CulturalOpinions;
+  struct_Difficulty_Level *DifficultyLevels;
+  struct_Era_Type *Eras;
+  int DiplomatMissions;
+  struct_Combat_Experience *CombatExperience;
+  int Game;
+  int field_BCC;
+  int field_BD0;
+  int field_BD4;
+  int field_BD8[3132];
+  class_Race *Races;
+  struct_Resource_Type *ResourceTypes;
+  class_Government *Governments;
+  struct_Scenario_Player *Players;
+  struct_UnitType *UnitTypes;
+  class_General General;
+  struct_Starting_Location *StartingLocations;
+  class_Advance *Advances;
+  struct_Worker_Job *WorkerJobs;
+  struct_Tile_Type *TileTypes;
+  int Units;
+  struct_World_Size *WorldSizes;
+  int Flavours;
+  int ScreenWidth;
+  int ScreenHeight;
+  int field_3E38;
+  int field_3E3C;
+  class_Combat_Controller Combat_Controller;
+  class_Map Map;
+};
+#pragma pack(pop)
