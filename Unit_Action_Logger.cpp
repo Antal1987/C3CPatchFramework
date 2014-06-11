@@ -53,6 +53,8 @@ void Unit_Action_Logger::Attack(class_Unit * Unit, int Direction)
 		Unit->Body.CivID, _D->Get_Civ_Name(Unit->Body.CivID).c_str(),
 		Unit->Body.X, Unit->Body.Y, TX, TY);
 }
+
+// Unit wins the combat while attacking => attacking unit wins
 void Unit_Action_Logger::Unit_Wins(class_Unit * Unit, int Param1)
 {
 	class_Unit * TargetUnit = (class_Unit *)Param1;
@@ -64,16 +66,18 @@ void Unit_Action_Logger::Unit_Wins(class_Unit * Unit, int Param1)
 		TargetUnit->Body.CivID, _D->Get_Civ_Name(TargetUnit->Body.CivID).c_str(), 
 		TargetUnit->Body.X, TargetUnit->Body.Y);
 }
+
+// Unit wins the combat while defending => attacking unit loses
 void Unit_Action_Logger::Unit_Loses(class_Unit * Unit, int Param1)
 {
 	class_Unit * TargetUnit = (class_Unit *)Param1;
 	log_string_format(_Log, "[Unit Loses]\tUnit #%d (%s) of Civ #%d (%s) at [%d, %d] was defeated by Unit #%d (%s) of Civ #%d (%s) at [%d, %d]", 
-		Unit->Body.ID, _D->Get_Unit_Name(Unit).c_str(), 
-		Unit->Body.CivID, _D->Get_Civ_Name(Unit->Body.CivID).c_str(), 
-		Unit->Body.X, Unit->Body.Y,
 		TargetUnit->Body.ID, _D->Get_Unit_Name(TargetUnit).c_str(), 
 		TargetUnit->Body.CivID, _D->Get_Civ_Name(TargetUnit->Body.CivID).c_str(), 
-		TargetUnit->Body.X, TargetUnit->Body.Y);
+		TargetUnit->Body.X, TargetUnit->Body.Y,
+		Unit->Body.ID, _D->Get_Unit_Name(Unit).c_str(), 
+		Unit->Body.CivID, _D->Get_Civ_Name(Unit->Body.CivID).c_str(), 
+		Unit->Body.X, Unit->Body.Y);
 }
 
 void Unit_Action_Logger::AI(class_Unit * Unit, int Action)

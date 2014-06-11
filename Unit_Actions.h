@@ -29,8 +29,8 @@ enum Unit_Action_Types
 	Unit_Action_AI_King = 22,
 	Unit_Action_Skip_Turn = 23,
 	Unit_Action_Attack = 24,
-	Unit_Action_Unit_Loses = 25,
-	Unit_Action_Unit_Wins = 26
+	Unit_Action_Unit_Loses = 25,  //Defence
+	Unit_Action_Unit_Wins = 26    //Attack
 };
 
 const int Unit_Actions_Count = 27;
@@ -40,7 +40,7 @@ static std::string Unit_Actions[Unit_Actions_Count] = {"Create", "Delete", "Move
 "AI_Naval_Power","AI_Air_Transport","AI_Naval_Transport","AI_Naval_Carrier",
 "AI_Terraform","AI_Settle","AI_Leader","AI_Tactical_Nuke",
 "AI_ICBM","AI_Naval_Missile_Transport","AI_Flag_Unit","AI_King",
-"Skip_Turn", "Attack", "Unit_Wins", "Unit_Loses"};
+"Skip_Turn", "Attack", "Unit_Loses", "Unit_Wins"};
 
 const int Unit_State_Count = 35;
 static std::string Unit_States[Unit_State_Count] = 
